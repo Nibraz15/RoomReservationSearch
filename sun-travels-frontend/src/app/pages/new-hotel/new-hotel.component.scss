@@ -1,0 +1,83 @@
+.edit-box {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 5px;
+
+    padding: 25px;
+}
+.topnav {
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+ color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.add-hotel {
+    margin-top: 10px;
+}
+@import '../../../styles.scss';
+
+.hotel-list {
+  display: flex;
+  flex-direction: column;
+  alignment: center;
+  align-self: center;
+  width: 500px;
+  background: white;
+  padding: 42px;
+  margin: auto;
+  margin-top: 250px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.title {
+  margin: auto;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $primary;
+}
+
+
+table, td {
+  width: 700px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background: aliceblue;
+  border: 1px solid black;
+  max-height: 680px;
+
+}
+th, td {
+  padding: 15px;
+}
+th{
+  width: 700px;
+  color: #f8f8f8;
+  background: #3f2b96;
+  position: sticky;
+  top: 0;
+  max-height: 680px;
+}

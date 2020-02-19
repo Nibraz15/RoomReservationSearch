@@ -1,0 +1,66 @@
+
+<div class="topnav">
+  <a class="active" href="">Home</a>
+  <a href="hotels">Hotels</a>
+  <a href="contracts">Contracts</a>
+  <a href="addcontract">Add Contracts</a>
+</div>
+<h1 align="center" class="head">WELCOME TO SUN TRAVELS</h1>
+<div class="centered-content>">
+  <div class="contract-viewer-container">
+
+      <div class="centered-content">
+        <div class="edit-box">
+          <h1 class="title">
+            SEARCH ROOMS
+          </h1>
+          <mat-form-field appearance="fill">
+            <mat-label>Book From (YYYY-MM-DD)</mat-label>
+            <input #fromInput matInput>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Book From (YYYY-MM-DD)</mat-label>
+            <input #toInput matInput>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Room Reqired</mat-label>
+            <input #roomInput matInput>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Adult Count</mat-label>
+            <input #adultInput matInput>
+          </mat-form-field>
+          <button class="add-hotel" mat-raised-button color="primary" (click)="searchRoom(fromInput.value,toInput.value,roomInput.value,adultInput.value)">Search</button>
+        </div>
+      </div>
+      <div class="hotel-list">
+        <h1 class="title">
+          Hotels
+        </h1>
+        <div style="overflow-y: auto">
+          <table style="width: 100%" >
+            <tr >
+              <th >Hotel Name</th>
+              <th>Room Type</th>
+              <th>Max Adult</th>
+              <th>Price</th>
+              <th>Availability</th>
+            </tr>
+            <tr  *ngFor="let room of Rooms">
+              <td>{{room[0]}}</td>
+              <td>{{room[1]}}</td>
+              <td>{{room[2]}}</td>
+              <td>{{room[3]}}</td>
+              <td bgcolor="#7fff00">Yes</td>
+            </tr>
+          </table>
+        </div>
+        <button class="back-button" mat-stroked-button (click)="reload()">Back</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+

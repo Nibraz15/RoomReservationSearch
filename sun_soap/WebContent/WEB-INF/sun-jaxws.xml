@@ -1,0 +1,13 @@
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+    version="2.0">
+    <endpoint name="ContractController"
+        implementation="com.sun.controller.ContractController"
+        url-pattern="/contract" />
+    <endpoint name="HotelController"
+        implementation="com.sun.controller.HotelController"
+        url-pattern="/hotel" />
+    <endpoint name="RoomController"
+        implementation="com.sun.controller.RoomController"
+        url-pattern="/rooms" />
+</endpoints>
+

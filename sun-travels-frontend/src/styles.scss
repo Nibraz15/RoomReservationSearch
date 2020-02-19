@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+$purple: #B06AB3;
+$blue: #4568DC;
+$dark-blue: #3f2b96;
+$light-blue: #B2FEFA;
+$light: #f8f8f8;
+
+$primary: $blue;
+$link: $light-blue;
+
+html {
+    background: linear-gradient(to right top, $purple, $blue);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

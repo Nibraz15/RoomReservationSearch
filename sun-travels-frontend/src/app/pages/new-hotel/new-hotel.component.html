@@ -1,0 +1,27 @@
+<div class="topnav">
+  <a href="">Home</a>
+  <a class="active" href="hotels">Hotels</a>
+  <a href="contracts">Contracts</a>
+  <a href="addcontract">ADD Contact</a>
+</div>
+
+<div class="hotel-list">
+      <h1 class="title">
+        Hotels
+      </h1>
+      <table style="width: 100%">
+        <tr>
+          <th>Hotel Id</th>
+          <th>Hotel Name</th>
+          <th>Location</th>
+        </tr>
+        <tr  *ngFor="let hotel of hotels">
+          <td>{{hotel.h_id}}</td>
+          <td>{{hotel.h_name}}</td>
+          <td>{{hotel.location}}</td>
+        </tr>
+      </table>
+      <button class="add-hotel" mat-stroked-button routerLink="/">Home</button>
+    </div>
+
+

@@ -1,0 +1,41 @@
+<div class="topnav">
+  <a href="">Home</a>
+  <a href="hotels">Hotels</a>
+  <a class="active" href="contract">Contracts</a>
+  <a href="addcontract">Add Contract</a>
+</div>
+
+
+<div class="hotel-list">
+    <h1 class="title">
+        Contracts
+    </h1>
+
+    <div class="hotel-menu">
+      <table style="width: 100%">
+        <tr>
+
+          <th>Hotel Name</th>
+          <th>Room Type</th>
+          <th>Room Count</th>
+          <th>Max Adult</th>
+          <th>Markup</th>
+          <th>Valid From</th>
+          <th>Valid To</th>
+        </tr>
+        <tr  *ngFor="let contract of contracts">
+          <td>{{contract[0]}}</td>
+          <td>{{contract[1]}}</td>
+          <td>{{contract[2]}}</td>
+          <td>{{contract[3]}}</td>
+          <td>{{contract[4]}}</td>
+          <td>{{contract[5]}}</td>
+          <td>{{contract[6]}}</td>
+
+        </tr>
+      </table>
+    </div>
+</div>
+
+
+

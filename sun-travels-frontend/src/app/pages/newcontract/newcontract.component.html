@@ -1,0 +1,52 @@
+<div class="topnav">
+  <a href="">Home</a>
+  <a href="hotels">Hotels</a>
+  <a href="contracts">Contracts</a>
+  <a class="active" href="addcontract">Add Contracts</a>
+</div>
+
+<div class="centered-content">
+  <div class="edit-box">
+    <h1 class="title">
+      ADD NEW CONTRACT
+    </h1>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Hotel Name</mat-label>
+      <input #nameInput matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Location</mat-label>
+      <input #locationInput matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Room Type</mat-label>
+      <input #rooomtypeInput matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Max Adult</mat-label>
+      <input #maxadultInput matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Num of Rooms</mat-label>
+      <input #roomcountInput matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Price</mat-label>
+      <input #priceInput matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Markup in Decimal</mat-label>
+      <input #markupInput matInput >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Contract Valid From (YYYY-MM-DD)</mat-label>
+      <input #validfromInput matInput>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Contract Valid To (YYYY-MM-DD)</mat-label>
+      <input #validtoInput matInput>
+    </mat-form-field>
+    <button class="add-hotel" mat-raised-button color="primary" (click)="createContract(nameInput.value, locationInput.value,maxadultInput.value,rooomtypeInput.value, roomcountInput.value,priceInput.value,markupInput.value,validfromInput.value,validtoInput.value)">Add Contract</button>
+  </div>
+</div>
