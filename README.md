@@ -1,10 +1,20 @@
 # SUN TRAVELS BOOKING SYSTEM
 
-## Architecture
+## ARCHITECTURE
 
 ![Entity Realtion Diagram of the System](docs/Sun_Travels_Architecture.png)
-## Entity Realtion Diagram of the System
+## ENTITIY RELATION DIAGRAM
 ![Basi Architecture of Booking System](docs/BookingSystem.png)
+
+## FRONT END USING ANGULAR 8 : http://localhost:4200/
+#### Search Screen
+![Search Screen](docs/SearchScreen.png)
+#### Hotels List Screen
+![Hotels List Screen](docs/HotelsListScreen.png)
+#### Contract List Screen
+![Contract List Screen](docs/ContractListScreen.png)
+#### Add New Contract Screen
+![Add New Contract Screen](docs/AddNewContractScreen.png)
 
 ## REST END POINTS
 ### GET REQUESTS
@@ -37,7 +47,7 @@
 ```
 
 ## SOAP END POINTS
-###### GER ALL CONTRACT AND CREATE CONTRACT: http://localhost:9966/contract?wsdl
+#### GER ALL CONTRACT AND CREATE CONTRACT: http://localhost:9966/contract?wsdl
 ###### SOAP Request to get all contracts
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -97,7 +107,7 @@
 ```
 ######  Metho Returns String True
 
-###### GER ALL HOTEL: http://localhost:9966/hotel?wsdl
+#### GER ALL HOTEL: http://localhost:9966/hotel?wsdl
 ###### SOAP Request to get all Hotels
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
@@ -119,7 +129,7 @@
     </S:Body>
 </S:Envelope>
 ```
-###### SEARCH FOR ROOMS: http://localhost:9966/rooms?wsdl
+#### SEARCH FOR ROOMS: http://localhost:9966/rooms?wsdl
 ###### SOAP Request to Search Rooms
 ```xml
     <?xml version="1.0" encoding="UTF-8"?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
